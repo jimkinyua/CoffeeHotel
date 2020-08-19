@@ -15,27 +15,49 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>Please fill out the following fields to login:</p>
 
-    <div class="row">
-        <div class="col-lg-5">
+    
+    
             <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
 
-                <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
+            <fieldset class="form-group position-relative has-icon-left">
+                <?= $form->field($model, 'username')->textInput(['maxlength' => 255, 'class' => 'form-control']); ?>
 
-                <?= $form->field($model, 'password')->passwordInput() ?>
+                <!-- <div class="form-control-position">
+                    <i class="ft-mail"></i>
+                </div> -->
+            </fieldset>
 
-                <?= $form->field($model, 'rememberMe')->checkbox() ?>
+            <fieldset class="form-group position-relative has-icon-left">
+                <?= $form->field($model, 'password')->passwordInput(['maxlength' => 255, 'class' => 'form-control']); ?>
 
-                <div style="color:#999;margin:1em 0">
+                <!-- <div class="form-control-position">
+                    <i class="la la-key"></i>
+                </div> -->
+            </fieldset> 
+
+            
+                <fieldset>
+                    <?= $form->field($model, 'rememberMe')->checkbox() ?>
+                    <label for="remember-me"> Remember Me</label>
+                </fieldset>
+               
+
+               
+
+                <!-- <div style="color:#999;margin:1em 0">
                     If you forgot your password you can <?= Html::a('reset it', ['site/request-password-reset']) ?>.
                     <br>
                     Need new verification email? <?= Html::a('Resend', ['site/resend-verification-email']) ?>
-                </div>
+                </div> -->
 
                 <div class="form-group">
-                    <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+                    <?= Html::submitButton('Login', ['class' => 'btn btn-outline-danger btn-block', 'name' => 'login-button']) ?>
                 </div>
 
+                <!-- <div class="card-body"> -->
+                     <a href="/site/signup" class="btn btn-outline-success btn-block"><i class="ft-user"></i> Register</a>
+                 <!-- </div> -->
+
             <?php ActiveForm::end(); ?>
-        </div>
-    </div>
+    
 </div>

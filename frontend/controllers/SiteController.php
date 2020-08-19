@@ -93,7 +93,7 @@ class SiteController extends Controller
             return $this->goBack();
         } else {
             $model->password = '';
-
+            $this->layout = 'guest';
             return $this->render('login', [
                 'model' => $model,
             ]);
@@ -157,7 +157,7 @@ class SiteController extends Controller
             Yii::$app->session->setFlash('success', 'Thank you for registration. Please check your inbox for verification email.');
             return $this->goHome();
         }
-
+        $this->layout = "guest";
         return $this->render('signup', [
             'model' => $model,
         ]);
