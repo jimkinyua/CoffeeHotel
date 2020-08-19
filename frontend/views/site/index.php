@@ -13,8 +13,8 @@ $this->title = 'My Yii Application';
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-white text-left">
-                                            <h3 class="text-white">278</h3>
-                                            <span>Active Listings</span>
+                                            <h3 class="text-white">5</h3>
+                                            <span>My Shops </span>
                                         </div>
                                         <div class="align-self-center">
                                             <i class="icon-pointer text-white font-large-2 float-right"></i>
@@ -30,8 +30,8 @@ $this->title = 'My Yii Application';
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-white text-left">
-                                            <h3 class="text-white">3490</h3>
-                                            <span>Hotels to Stay</span>
+                                            <h3 class="text-white">500</h3>
+                                            <span>Cups of Coffee Sold</span>
                                         </div>
                                         <div class="align-self-center">
                                             <i class="icon-cup text-white font-large-2 float-right"></i>
@@ -47,11 +47,11 @@ $this->title = 'My Yii Application';
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-white text-left">
-                                            <h3 class="text-white">4500</h3>
-                                            <span>Airlines to Travel</span>
+                                            <h3 class="text-white">60</h3>
+                                            <span>Employees</span>
                                         </div>
                                         <div class="align-self-center">
-                                            <i class="icon-plane text-white font-large-2 float-right"></i>
+                                            <i class="icon-users text-white font-large-2 float-right"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -64,11 +64,11 @@ $this->title = 'My Yii Application';
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-white text-left">
-                                            <h3 class="text-white">1500</h3>
-                                            <span>VIP Transports</span>
+                                            <h3 class="text-white">30</h3>
+                                            <span> Drink Varieties </span>
                                         </div>
                                         <div class="align-self-center">
-                                            <i class="icon-star text-white font-large-2 float-right"></i>
+                                            <i class="icon-eye text-white font-large-2 float-right"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -82,7 +82,7 @@ $this->title = 'My Yii Application';
                     <div class="col-xl-8 col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Total Booking</h4>
+                                <h4 class="card-title">Sales</h4>
                                 <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
                                 <div class="heading-elements">
                                     <ul class="list-inline mb-0">
@@ -134,13 +134,9 @@ $this->title = 'My Yii Application';
                     <div id="recent-transactions" class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Recent Booking</h4>
+                                <h4 class="card-title">Recent Customers</h4>
                                 <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
-                                <div class="heading-elements">
-                                    <ul class="list-inline mb-0">
-                                        <li><a class="btn btn-sm btn-danger box-shadow-2 round btn-min-width pull-right" href="invoice-summary.html" target="_blank">Invoice Summary</a></li>
-                                    </ul>
-                                </div>
+                               
                             </div>
                             <div class="card-content">
                                 <div class="table-responsive">
@@ -150,7 +146,6 @@ $this->title = 'My Yii Application';
                                                 <th class="border-top-0">Status</th>
                                                 <th class="border-top-0">Invoice#</th>
                                                 <th class="border-top-0">Stayed</th>
-                                                <th class="border-top-0">Hotel Type</th>
                                                 <th class="border-top-0">Amount</th>
                                             </tr>
                                         </thead>
@@ -164,25 +159,10 @@ $this->title = 'My Yii Application';
                                                     </span>
                                                     <span>Elizabeth W.</span>
                                                 </td>
-                                                <td>
-                                                    <button type="button" class="btn btn-sm btn-outline-danger round">Resort</button>
-                                                </td>
+                                                
                                                 <td class="text-truncate">$ 1200.00</td>
                                             </tr>
-                                            <tr>
-                                                <td class="text-truncate"><i class="la la-dot-circle-o danger font-medium-1 mr-1"></i> Declined</td>
-                                                <td class="text-truncate"><a href="#">INV-001002</a></td>
-                                                <td class="text-truncate">
-                                                    <span class="avatar avatar-xs">
-                                                        <img class="box-shadow-2" src="../../../app-assets/images/portrait/small/avatar-s-5.png" alt="avatar">
-                                                    </span>
-                                                    <span>Doris R.</span>
-                                                </td>
-                                                <td>
-                                                    <button type="button" class="btn btn-sm btn-outline-warning round">Villa</button>
-                                                </td>
-                                                <td class="text-truncate">$ 1850.00</td>
-                                            </tr>
+                                       
                                             <tr>
                                                 <td class="text-truncate"><i class="la la-dot-circle-o warning font-medium-1 mr-1"></i> Pending</td>
                                                 <td class="text-truncate"><a href="#">INV-001003</a></td>
@@ -192,9 +172,7 @@ $this->title = 'My Yii Application';
                                                     </span>
                                                     <span>Megan S.</span>
                                                 </td>
-                                                <td>
-                                                    <button type="button" class="btn btn-sm btn-outline-success round">Apartment</button>
-                                                </td>
+                                                
                                                 <td class="text-truncate">$ 3200.00</td>
                                             </tr>
                                             <tr>
@@ -206,9 +184,7 @@ $this->title = 'My Yii Application';
                                                     </span>
                                                     <span>Andrew D.</span>
                                                 </td>
-                                                <td>
-                                                    <button type="button" class="btn btn-sm btn-outline-info round">Homestay</button>
-                                                </td>
+                                               
                                                 <td class="text-truncate">$ 4500.00</td>
                                             </tr>
                                             <tr>
@@ -220,9 +196,7 @@ $this->title = 'My Yii Application';
                                                     </span>
                                                     <span>Walter R.</span>
                                                 </td>
-                                                <td>
-                                                    <button type="button" class="btn btn-sm btn-outline-danger round">Guest House</button>
-                                                </td>
+                                               
                                                 <td class="text-truncate">$ 1500.00</td>
                                             </tr>
                                         </tbody>
