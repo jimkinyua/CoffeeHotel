@@ -34,8 +34,8 @@ AppAsset::register($this);
             <div class="navbar-header">
                 <ul class="nav navbar-nav flex-row">
                     <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-1"></i></a></li>
-                    <li class="nav-item"><a class="navbar-brand" href="index.html"><img class="brand-logo" alt="modern admin logo" src="../../../app-assets/images/logo/logo.png">
-                            <h3 class="brand-text">Modern Admin</h3>
+                    <li class="nav-item"><a class="navbar-brand" href="/"><img class="brand-logo" alt="modern admin logo" src="../../../app-assets/images/logo/logo.png">
+                            <h3 class="brand-text">Sample Logo</h3>
                         </a></li>
                     <li class="nav-item d-md-none"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a></li>
                 </ul>
@@ -258,15 +258,14 @@ AppAsset::register($this);
       <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class="active"><a href="dashboard-travel.html"><i class="mbri-paper-plane"></i><span class="menu-title" data-i18n="nav.dash.travel">Travel</span></a>
+                
+                <li class=" nav-item"><a href="/site/employee-list"><i class="mbri-users"></i><span class="menu-title" data-i18n="">Employees </span></a>
                 </li>
-                <li class=" nav-item"><a href="travel-list.html"><i class="mbri-bulleted-list"></i><span class="menu-title" data-i18n="">Travel List</span></a>
+                <li class=" nav-item"><a href="/site/my-shops"><i class="mbri-database"></i><span class="menu-title" data-i18n="">My Shops</span></a>
                 </li>
-                <li class=" nav-item"><a href="travel-detail.html"><i class="mbri-database"></i><span class="menu-title" data-i18n="">Travel Detail</span></a>
+                <li class=" nav-item"><a href="/site/my-drinks"><i class="mbri-bootstrap"></i><span class="menu-title" data-i18n="">Drinks</span></a>
                 </li>
-                <li class=" nav-item"><a href="travel-booking.html"><i class="mbri-bootstrap"></i><span class="menu-title" data-i18n="">Travel Booking</span></a>
-                </li>
-                <li class=" nav-item"><a href="travel-payment.html"><i class="mbri-cash"></i><span class="menu-title" data-i18n="">Payment Details</span></a>
+                <li class=" nav-item"><a href="/site/reports"><i class="mbri-cash"></i><span class="menu-title" data-i18n="">Payment Details</span></a>
                 </li>
                 <li class=" nav-item"><a href="travel-complete-order.html"><i class="mbri-success"></i><span class="menu-title" data-i18n="">Complete Booking</span></a>
                 </li>
@@ -427,16 +426,7 @@ AppAsset::register($this);
     </div>
 
 </body>
-<!-- <div class="wrap">
-   
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
-        <?= $content ?>
-    </div>
-</div> -->
+
 
 <footer class="footer">
     <div class="container">

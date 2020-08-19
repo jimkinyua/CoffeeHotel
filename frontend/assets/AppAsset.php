@@ -13,6 +13,9 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         // 'css/site.css',
+  
+        'app-assets/css/core/menu/menu-types/vertical-menu.css',
+        'app-assets/css/core/colors/palette-gradient.css',
         'app-assets/vendors/css/vendors.min.css',
         'app-assets/vendors/css/charts/jquery-jvectormap-2.0.3.css',
         'app-assets/vendors/css/weather-icons/climacons.min.css',
@@ -39,6 +42,7 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
        'app-assets/vendors/js/vendors.min.js',
+       'app-assets/js/scripts/pages/hospital-payment-reports.js',
         'app-assets/vendors/js/charts/chart.min.js',
         'app-assets/vendors/js/charts/raphael-min.js',
         'app-assets/vendors/js/charts/morris.min.js',

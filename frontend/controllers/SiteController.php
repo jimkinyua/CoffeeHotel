@@ -31,7 +31,7 @@ class SiteController extends Controller
                 'only' => ['logout', 'signup'],
                 'rules' => [
                     [
-                        'actions' => ['signup'],
+                        'actions' => ['signup', 'employee-list'],
                         'allow' => true,
                         'roles' => ['?'],
                     ],
@@ -99,6 +99,32 @@ class SiteController extends Controller
             ]);
         }
     }
+
+    //Displays Dummy Employees
+    public function actionEmployeeList(){
+        // $this->layout = 'guest';
+        return $this->render('dummyemployees');
+    }
+
+      //Displays Dummy Shops
+      public function actionMyShops(){
+        // $this->layout = 'guest';
+        return $this->render('dummyshops');
+    }
+
+      //Displays Dummy Shops
+      public function actionMyDrinks(){
+        // $this->layout = 'guest';
+        return $this->render('dummydrinks');
+    }
+
+    //reports
+       //Displays Dummy Shops
+       public function actionReports(){
+        // $this->layout = 'guest';
+        return $this->render('dummyreports');
+    }
+
 
     /**
      * Logs out the current user.
