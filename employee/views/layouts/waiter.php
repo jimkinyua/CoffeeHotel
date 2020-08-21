@@ -9,24 +9,64 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
+$baseUrl = Yii::$app->request->baseUrl;
 
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
+<html lang="<?= Yii::$app->language ?>" data-textdirection="ltr">
 <head>
-    <meta charset="<?= Yii::$app->charset ?>">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Modern admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities with bitcoin dashboard.">
+    <meta name="keywords" content="admin template, modern admin template, dashboard template, flat admin template, responsive admin template, web app, crypto dashboard, bitcoin dashboard">
+    <meta name="author" content="PIXINVENT">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+       <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/vendors/css/charts/jquery-jvectormap-2.0.3.css">
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/vendors/css/weather-icons/climacons.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/fonts/meteocons/style.css">
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/vendors/css/charts/morris.css">
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/vendors/css/charts/chartist.css">
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/vendors/css/charts/chartist-plugin-tooltip.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/css/components.css">
+    <!-- END: Theme CSS-->
+
+     <!-- BEGIN: Page CSS-->
+     <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/css/core/menu/menu-types/vertical-compact-menu.css">
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/fonts/mobiriseicons/24px/mobirise/style.css">
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/vendors/css/charts/jquery-jvectormap-2.0.3.css">
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/fonts/simple-line-icons/style.css">
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/css/pages/timeline.css">
+    <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/app-assets/css/pages/dashboard-travel.css">
+    <!-- END: Page CSS-->
+
+      <!-- BEGIN: Custom CSS-->
+      <link rel="stylesheet" type="text/css" href="<?= $baseUrl; ?>/assets/css/style.css">
+    <!-- END: Custom CSS-->
+
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body>
+<body class="vertical-layout vertical-compact-menu 2-columns   fixed-navbar" data-open="click" data-menu="vertical-compact-menu" data-col="2-columns" >
 <?php $this->beginBody() ?>
 
-<body class="vertical-layout vertical-compact-menu 2-columns   fixed-navbar" data-open="click" data-menu="vertical-compact-menu" data-col="2-columns">
+<!-- <body > -->
 
  <!-- BEGIN: Header-->
  <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-dark bg-cyan navbar-shadow navbar-brand-center">
@@ -114,9 +154,8 @@ AppAsset::register($this);
         </div>
     </nav>
 
-      <!-- BEGIN: Main Menu-->
-
-      <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+    
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                 
@@ -127,7 +166,6 @@ AppAsset::register($this);
              
             </ul>
         </div>
-    </div>
 
      <!-- BEGIN: Content-->
      <div class="app-content content">
@@ -151,6 +189,30 @@ AppAsset::register($this);
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
 </footer>
+
+ <!-- BEGIN: Vendor JS-->
+ <script src="<?= $baseUrl; ?>/app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+       <!-- BEGIN: Page Vendor JS-->
+    <!-- script(src=app_assets_path + '/vendors/js/charts/chartist.min.js')-->
+    <script src="<?= $baseUrl; ?>/app-assets/vendors/js/charts/chart.min.js"></script>
+    <script src="<?= $baseUrl; ?>/app-assets/vendors/js/charts/raphael-min.js"></script>
+    <script src="<?= $baseUrl; ?>/app-assets/vendors/js/charts/morris.min.js"></script>
+    <script src="<?= $baseUrl; ?>/app-assets/vendors/js/charts/jquery.sparkline.min.js"></script>
+    <script src="<?= $baseUrl; ?>/app-assets/vendors/js/charts/jvector/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="<?= $baseUrl; ?>/app-assets/vendors/js/charts/jvector/jquery-jvectormap-world-mill.js"></script>
+    <!-- <script src="<?= $baseUrl; ?>/app-assets/data/jvector/visitor-data.js"></script> -->
+    <!-- END: Page Vendor JS-->
+
+     <!-- BEGIN: Theme JS-->
+     <script src="<?= $baseUrl; ?>/app-assets/js/core/app-menu.js"></script>
+    <script src="<?= $baseUrl; ?>/app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <!-- <script src="<?= $baseUrl; ?>/app-assets/js/scripts/pages/dashboard-travel.js"></script> -->
+    <!-- END: Page JS-
 
 <?php $this->endBody() ?>
 </body>

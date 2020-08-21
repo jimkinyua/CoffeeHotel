@@ -38,11 +38,11 @@ class GuestAsset extends AssetBundle
         'assets/css/style.css',
     ];
     public $js = [
+        'app-assets/vendors/js/charts/jquery.sparkline.min.js',
        'app-assets/vendors/js/vendors.min.js',
         'app-assets/vendors/js/charts/chart.min.js',
         'app-assets/vendors/js/charts/raphael-min.js',
         'app-assets/vendors/js/charts/morris.min.js',
-        'app-assets/vendors/js/charts/jquery.sparkline.min.js',
         'app-assets/vendors/js/charts/jvector/jquery-jvectormap-2.0.3.min.js',
         'app-assets/vendors/js/charts/jvector/jquery-jvectormap-world-mill.js',
         'app-assets/data/jvector/visitor-data.js',
@@ -53,7 +53,7 @@ class GuestAsset extends AssetBundle
 
     ];
     public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
+        // 'yii\web\YiiAsset',
+        // 'yii\bootstrap\BootstrapAsset',
     ];
 }

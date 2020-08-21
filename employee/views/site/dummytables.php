@@ -1,6 +1,7 @@
 <?php
 use yii\helpers\Html;
 $this->title = 'Tables';
+$baseUrl = Yii::$app->request->baseUrl;
 
 
 
@@ -74,6 +75,8 @@ $this->title = 'Tables';
     </div>
   </div>
 </div>
+
+
 
 <!-- Bordered striped start -->
      <div class="row">
@@ -151,7 +154,13 @@ $this->title = 'Tables';
 <!-- Bordered striped end -->
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-
+    <!-- BEGIN: Vendor JS-->
+    <script src="<?= $baseUrl; ?>/app-assets/vendors/js/material-vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+     <!-- BEGIN: Theme JS-->
+     <script src="<?= $baseUrl; ?>/app-assets/js/core/app-menu.js"></script>
+    <script src="<?= $baseUrl; ?>/app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
 <script>
    
   $(document).on('click', '.showModalButton', function(){

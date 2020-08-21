@@ -32,7 +32,7 @@ class AppAsset extends AssetBundle
         'app-assets/css/core/menu/menu-types/vertical-compact-menu.css',
         'app-assets/css/core/colors/palette-gradient.css',
         'app-assets/fonts/mobiriseicons/24px/mobirise/style.css',
-        'app-assets/vendors/css/charts/jquery-jvectormap-2.0.3.css',
+        // 'app-assets/vendors/css/charts/jquery-jvectormap-2.0.3.css',
         'app-assets/fonts/simple-line-icons/style.css',
         'app-assets/css/core/colors/palette-gradient.css',
         'app-assets/css/pages/timeline.css',
@@ -42,22 +42,22 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
        'app-assets/vendors/js/vendors.min.js',
-       'app-assets/js/scripts/pages/hospital-payment-reports.js',
-        'app-assets/vendors/js/charts/chart.min.js',
-        'app-assets/vendors/js/charts/raphael-min.js',
-        'app-assets/vendors/js/charts/morris.min.js',
-        'app-assets/vendors/js/charts/jquery.sparkline.min.js',
-        'app-assets/vendors/js/charts/jvector/jquery-jvectormap-2.0.3.min.js',
-        'app-assets/vendors/js/charts/jvector/jquery-jvectormap-world-mill.js',
-        'app-assets/data/jvector/visitor-data.js',
+    //    'app-assets/js/scripts/pages/hospital-payment-reports.js',
+        // 'app-assets/vendors/js/charts/chart.min.js',
+        // 'app-assets/vendors/js/charts/raphael-min.js',
+        // 'app-assets/vendors/js/charts/morris.min.js',
+        // 'app-assets/vendors/js/charts/jquery.sparkline.min.js',
+        // 'app-assets/vendors/js/charts/jvector/jquery-jvectormap-2.0.3.min.js',
+        // 'app-assets/vendors/js/charts/jvector/jquery-jvectormap-world-mill.js',
+        // 'app-assets/data/jvector/visitor-data.js',
 
         'app-assets/js/core/app-menu.js',
         'app-assets/js/core/app.js',
-        'app-assets/js/scripts/pages/dashboard-travel.js',
+        // 'app-assets/js/scripts/pages/dashboard-travel.js',
 
     ];
     public $depends = [
-        'yii\web\YiiAsset',
+        // 'yii\web\YiiAsset',
         // 'yii\bootstrap\BootstrapAsset',
     ];
 }

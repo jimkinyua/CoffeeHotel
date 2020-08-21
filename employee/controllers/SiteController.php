@@ -116,7 +116,7 @@ class SiteController extends Controller
       //Displays Dummy Employees
       public function actionWaiter(){
         $this->layout = 'waiter';
-        
+        // exit('hata');
         return $this->render('dummydrinks');
     }
 
